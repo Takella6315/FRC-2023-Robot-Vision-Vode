@@ -21,6 +21,7 @@ import edu.wpi.first.math.util.Units;
         private static final double fieldWidth = Units.inchesToMeters((26*12) + 3.5);
         
         // TODO: handle alliance switching
+        
 
         static double archeryWallY = Units.inchesToMeters(351);
         static double bleacherY = Units.inchesToMeters(97);
