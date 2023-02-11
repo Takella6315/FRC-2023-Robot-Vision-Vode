@@ -17,15 +17,13 @@ import edu.wpi.first.math.system.plant.LinearSystemId;
 import edu.wpi.first.math.trajectory.TrajectoryConfig;
 import edu.wpi.first.math.util.Units;
 
-
+//Have to add mirrored trajectories if alliance is switched
 
     public static final class VisionConstants {
-        
+
         private static final double fieldLength = Units.inchesToMeters((54*12) + 3.25);
         private static final double fieldWidth = Units.inchesToMeters((26*12) + 3.5);
         
-        // TODO: handle alliance switching (mirror trajectories)
-
         static double wallY = Units.inchesToMeters(351);
         static double wallY2 = Units.inchesToMeters(97);
         public static final AprilTagFieldLayout tagLayout = new AprilTagFieldLayout(
@@ -53,4 +51,3 @@ import edu.wpi.first.math.util.Units;
         public static final int camResolutionHeight = 720;
         public static final double minTargetArea = 10;
     }
-}
