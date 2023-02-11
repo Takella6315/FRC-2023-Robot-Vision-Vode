@@ -24,17 +24,17 @@ import edu.wpi.first.math.util.Units;
         private static final double fieldLength = Units.inchesToMeters((54*12) + 3.25);
         private static final double fieldWidth = Units.inchesToMeters((26*12) + 3.5);
         
-        static double wallY = Units.inchesToMeters(351);
+        static double wallY1 = Units.inchesToMeters(351);
         static double wallY2 = Units.inchesToMeters(97);
         public static final AprilTagFieldLayout tagLayout = new AprilTagFieldLayout(
             List.of(
 
-                new AprilTag(1, new Pose3d(Units.inchesToMeters(120.25+300), wallY, Units.inchesToMeters(23.75), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270)))),
+                new AprilTag(1, new Pose3d(Units.inchesToMeters(120.25+300), wallY1, Units.inchesToMeters(23.75), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270)))),
                 new AprilTag(2, new Pose3d(0, 0, Units.inchesToMeters(51.5),    new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(90)))),
                 new AprilTag(3, new Pose3d(Units.inchesToMeters(214.375+300), Units.inchesToMeters(29.25), Units.inchesToMeters(26.25), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(180)))),
-                new AprilTag(5, new Pose3d(Units.inchesToMeters(208.125), wallY, Units.inchesToMeters(44), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270)))),
+                new AprilTag(5, new Pose3d(Units.inchesToMeters(208.125), wallY1, Units.inchesToMeters(44), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270)))),
                 new AprilTag(6, new Pose3d(0, 0, Units.inchesToMeters(57.0625), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(90)))),
-                new AprilTag(7, new Pose3d(Units.inchesToMeters(30.5), wallY, Units.inchesToMeters(43), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270))))
+                new AprilTag(7, new Pose3d(Units.inchesToMeters(30.5), wallY1, Units.inchesToMeters(43), new Rotation3d(VecBuilder.fill(0, 0, 1), Units.degreesToRadians(270))))
             ), VisionConstants.fieldLength, VisionConstants.fieldWidth
         );
 
