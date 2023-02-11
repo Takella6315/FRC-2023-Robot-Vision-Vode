@@ -17,15 +17,13 @@ public class Vision {
   private Optional<EstimatedRobotPose> currentFieldPose;
 
   public Vision() {
-    camera = new PhotonCamera(VisionConstants.cameraName);
+    camera = new PhotonCamera("PhotonVisionCamera");
     poseEstimator = new PhotonPoseEstimator(VisionConstants.tagLayout, PoseStrategy.CLOSEST_TO_REFERENCE_POSE, camera, VisionConstants.robotToCamera);
     currentFieldPose = Optional.empty();
   }
 
   /**
-   * gives you the current estimate of your field pose
    * @return
-   * your current pose estimate
    */
 
   public Optional<EstimatedRobotPose> getCurrentPoseEstimate() {
